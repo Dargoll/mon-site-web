@@ -1,0 +1,158 @@
+{
+  "nav": {
+    "home": "首页",
+    "biography": "简介",
+    "projects": "项目",
+    "media": "媒体",
+    "contact": "联系"
+  },
+  "home": {
+    "system": "系统已激活",
+    "title": "Loïc WALDER",
+    "role": "法国国家警察工会全国代表",
+    "idline": "编号: 001 | 状态: 活跃 | 权限: 全国",
+    "mission": "> 使命：为所有公民提供安全与正义",
+    "btnProfile": "访问简介",
+    "btnMedia": "访问媒体",
+    "statAvailability": "可用性",
+    "statCommitment": "投入",
+    "statDetermination": "决心",
+    "ctaJoin": "加入 — UNSA Police"
+  },
+  "projects": {
+    "title": "项目与热情",
+    "subtitle": "> 发现我的项目与兴趣！",
+    "cards": {
+      "designTitle": "设计与图形",
+      "designDesc": "现代化、精炼、赋予想法生命：界面、品牌与精致排版。",
+      "tiktokTitle": "TikTok频道 - Humour_PN",
+      "tiktokDesc": "幽默与幕后故事。",
+      "chineseTitle": "中文学习",
+      "chineseDesc": "通过旅行与交流学习语言。"
+    }
+  },
+  "design": {
+    "heroTag": "创意工作室",
+    "title": "设计与图形",
+    "subtitle": "> 通过视觉与界面讲述与现代化。",
+    "intro": "我将想法转化为视觉体验：清晰的界面、易记的品牌、平衡的排版。我设计现代Web界面、社交媒体视觉、海报，以及一致的设计系统，特别注重可读性与细节。",
+    "ctaContact": "联系我",
+    "ctaPortfolio": "查看作品集PDF",
+    "examplesTitle": "近期案例",
+    "gallery": {
+      "uiDashboardTitle": "极简后台界面",
+      "uiDashboardCaption": "冷色调、圆角卡片、优先可读性",
+      "landingTitle": "产品落地页",
+      "landingCaption": "强力首屏、清晰层级",
+      "posterTitle": "活动海报",
+      "posterCaption": "强构图、重对比、有节奏",
+      "brandTitle": "标志与品牌",
+      "brandCaption": "简洁、易记、可延展",
+      "socialTitle": "社交媒体样机",
+      "socialCaption": "自适应格式，视觉一致",
+      "articleTitle": "文章页重构",
+      "articleCaption": "舒适阅读，可复用组件"
+    },
+    "method": {
+      "listenTitle": "倾听与定位",
+      "listenDesc": "理解使用场景，明确风格与现代程度。",
+      "exploreTitle": "探索与样机",
+      "exploreDesc": "情绪板、字体方案、栅格与快速原型。",
+      "launchTitle": "完善与交付",
+      "launchDesc": "可复用系统、优化资源、规范交付。"
+    }
+  },
+  "seo": {
+    "siteName": "Walder Corporation",
+    "homepageTitle": "首页 — Walder Corporation",
+    "homepageDescription": "发现我的项目，我在UNSA Police的承诺以及媒体露面。",
+    "projectsTitle": "项目 — Walder Corporation",
+    "projectsDescription": "探索我的项目：设计、工具、内容与热情。",
+    "designTitle": "设计与图形 — Walder Corporation",
+    "designDescription": "现代界面、品牌识别与精致排版：我的方法与近期案例。",
+    "biographyTitle": "个人简介 — Walder Corporation",
+    "biographyDescription": "背景与责任：UNSA Police、使命与媒体露面。",
+    "mediaTitle": "媒体 — Walder Corporation",
+    "mediaDescription": "电视/广播/媒体精选：采访、辩论与分析。"
+  },
+  "common": {
+    "loading": "加载中…",
+    "openInNewTab": "（在新标签页中打开）"
+  },
+  "loading": {
+    "title": "系统初始化中",
+    "subtitle": "正在加载 UNSA Police 网络…"
+  },
+  "bio": {
+    "heroTag": "用户资料",
+    "heroTitle": "个人资料数据",
+    "heroSubtitle": "> 正在分析职业背景…",
+    "panelTitle": "资料初始化",
+    "avatarAlt": "Loïc Walder 头像",
+    "statusLabel": "状态",
+    "statusLoading": "加载中…",
+    "statusComplete": "已完成",
+    "progressLabel": "进度",
+    "showButton": "显示个人资料",
+    "init": {
+      "initData": "> 正在初始化个人资料数据…",
+      "loadCareer": "> 正在加载职业履历…",
+      "parseRecords": "> 正在解析 UNSA Police 记录…",
+      "compileAchievements": "> 正在汇总成就…",
+      "crossMedia": "> 正在交叉比对媒体露面…",
+      "complete": "> 数据收集完成。点击以显示资料。",
+      "ready": "> 数据收集完成。点击以显示资料。"
+    },
+    "paragraph1": "Loïc Walder 是一名法国警官与工会活动者，担任 UNSA Police 的全国传播代表，是法国主要警察工会之一。",
+    "paragraph2": "常驻巴黎，兼具一线经验与传播策略能力，致力于维护警员权益并改善工作条件。",
+    "paragraph3": "现职负责工会对内对外传播、媒体关系与数字化形象，确保警员的声音被清晰听见。",
+    "paragraph4": "他善于将严肃倡议与创意传播结合，常以数字叙事、幽默等现代形式触达公众。",
+    "paragraph5": "以公正、专业与团结为价值导向，主张务实改革、技术能力与对职业的尊重。"
+  },
+  "media": {
+    "heroTag": "媒体档案",
+    "title": "电视访谈",
+    "subtitle": "> 面向公众的交流与电视辩论",
+    "types": {
+      "interview": "采访",
+      "debate": "辩论",
+      "report": "报道"
+    },
+    "durationTBD": "待定",
+    "showOlder": "查看更早的节目",
+    "showLess": "收起",
+    "comingNext": "即将到来",
+    "queue": {
+      "programming": "节目安排进行中…",
+      "sync": "与全国频道同步…",
+      "update": "更新媒体日程…",
+      "standby": "请稍候更新_"
+    },
+    "items": {
+      "orange": {
+        "title": "“发条橙”之下的法国暴力地图",
+        "desc": "“对暴力的抑制力在减弱。如今穿制服就可能成为目标。”"
+      },
+      "dzmafia": {
+        "title": "DZ黑帮：对法国的重大威胁",
+        "desc": "“我们的司法链条正承受压力！”"
+      },
+      "guetApens": {
+        "title": "追捕后遭遇埋伏",
+        "desc": "“某些言论在鼓动对警方的埋伏袭击。”"
+      },
+      "mantes": {
+        "title": "CRS 8 部署于芒特拉若利",
+        "desc": "“我们正面对受反警察叙事影响的年轻人。”"
+      },
+      "europe1": {
+        "title": "节庆与纪念日：骚乱难以避免？",
+        "desc": "“声称能避免一切并不现实。”"
+      },
+      "pm": {
+        "title": "LFI：市政警察无需配枪",
+        "desc": "“这样的表述非常不负责任。”"
+      }
+    }
+  }
+}

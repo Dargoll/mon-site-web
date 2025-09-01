@@ -1,0 +1,158 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "biography": "Biographie",
+    "projects": "Projets",
+    "media": "Médias",
+    "contact": "Contact"
+  },
+  "home": {
+    "system": "SYSTÈME ACTIVÉ",
+    "title": "Loïc WALDER",
+    "role": "DÉLÉGUÉ NATIONAL — UNSA POLICE",
+    "idline": "ID : 001 | STATUT : ACTIF | ACCRÉDITATION : NATIONALE",
+    "mission": "> MISSION : Sécurité et justice pour tous les citoyens",
+    "btnProfile": "ACCÉDER AU PROFIL",
+    "btnMedia": "ACCÉDER AUX MÉDIAS",
+    "statAvailability": "Disponibilité",
+    "statCommitment": "Engagement",
+    "statDetermination": "Détermination",
+    "ctaJoin": "ADHÉRER — UNSA Police"
+  },
+  "projects": {
+    "title": "PROJETS & PASSIONS",
+    "subtitle": "> Découvrez mes projets et passions !",
+    "cards": {
+      "designTitle": "Design & Graphisme",
+      "designDesc": "Moderniser, épurer, donner vie aux idées : UI, identité visuelle et compositions soignées.",
+      "tiktokTitle": "Chaîne TikTok - Humour_PN",
+      "tiktokDesc": "Humour et coulisses de la Police.",
+      "chineseTitle": "Langue chinoise",
+      "chineseDesc": "Apprentissage à travers les voyages et rencontres."
+    }
+  },
+  "design": {
+    "heroTag": "Studio de création",
+    "title": "Design & Graphisme",
+    "subtitle": "> Moderniser, épurer, raconter par l’image et l’interface.",
+    "intro": "J’aime transformer une idée en expérience visuelle : UI claires, identités percutantes, compositions équilibrées. Je conçois des interfaces web modernes, des visuels pour les réseaux, des affiches, et des systèmes graphiques cohérents — avec un soin particulier pour la lisibilité et le détail.",
+    "ctaContact": "Me contacter",
+    "ctaPortfolio": "Voir le portfolio PDF",
+    "examplesTitle": "Exemples récents",
+    "gallery": {
+      "uiDashboardTitle": "UI Dashboard minimaliste",
+      "uiDashboardCaption": "Palette froide, cards arrondies, lisibilité prioritaire",
+      "landingTitle": "Landing page produit",
+      "landingCaption": "Hero impactant, hiérarchie typographique claire",
+      "posterTitle": "Affiche événementielle",
+      "posterCaption": "Composition forte, contraste et rythme",
+      "brandTitle": "Logo & identité",
+      "brandCaption": "Simplicité, mémorisation, déclinaisons",
+      "socialTitle": "Mockups réseaux sociaux",
+      "socialCaption": "Formats adaptatifs, cohérence visuelle",
+      "articleTitle": "Refonte page article",
+      "articleCaption": "Lecture confortable, composants réutilisables"
+    },
+    "method": {
+      "listenTitle": "Écoute & intention",
+      "listenDesc": "Comprendre les usages, définir le ton et le niveau de modernité attendu.",
+      "exploreTitle": "Exploration & maquettes",
+      "exploreDesc": "Moodboards, variantes typographiques, grilles, prototypes rapides.",
+      "launchTitle": "Finition & déploiement",
+      "launchDesc": "Systèmes réutilisables, assets optimisés, transmission propre."
+    }
+  },
+  "seo": {
+    "siteName": "Walder Corporation",
+    "homepageTitle": "Accueil — Walder Corporation",
+    "homepageDescription": "Découvrez mes projets, mon engagement à l’UNSA Police et mes interventions médias.",
+    "projectsTitle": "Projets — Walder Corporation",
+    "projectsDescription": "Explorez mes projets : design, outils, contenus et passions.",
+    "designTitle": "Design & Graphisme — Walder Corporation",
+    "designDescription": "UI modernes, identités visuelles et compositions soignées : ma démarche et des exemples récents.",
+    "biographyTitle": "Biographie — Walder Corporation",
+    "biographyDescription": "Parcours et engagements : UNSA Police, missions et interventions.",
+    "mediaTitle": "Médias — Walder Corporation",
+    "mediaDescription": "Sélection d'interventions TV, radio et médias : interviews, débats et analyses."
+  },
+  "common": {
+    "loading": "Chargement…",
+    "openInNewTab": "(s’ouvre dans un nouvel onglet)"
+  },
+  "loading": {
+    "title": "INITIALISATION DU SYSTÈME",
+    "subtitle": "Chargement du réseau UNSA Police…"
+  },
+  "bio": {
+    "heroTag": "Profil utilisateur",
+    "heroTitle": "Données biographiques",
+    "heroSubtitle": "> Analyse du parcours professionnel en cours…",
+    "panelTitle": "Initialisation du profil",
+    "avatarAlt": "Photo de profil de Loïc Walder",
+    "statusLabel": "STATUT",
+    "statusLoading": "CHARGEMENT…",
+    "statusComplete": "COMPLÉTÉ",
+    "progressLabel": "PROGRESSION",
+    "showButton": "AFFICHER LE PROFIL",
+    "init": {
+      "initData": "> Initialisation des données biographiques…",
+      "loadCareer": "> Chargement de l’historique de carrière…",
+      "parseRecords": "> Analyse des dossiers UNSA Police…",
+      "compileAchievements": "> Compilation des réalisations…",
+      "crossMedia": "> Recoupement des interventions médias…",
+      "complete": "> Collecte terminée. Appuyez pour afficher le profil.",
+      "ready": "> Collecte terminée. Appuyez pour afficher le profil."
+    },
+    "paragraph1": "Loïc Walder est policier français et syndicaliste actif, Délégué national à la communication à l’UNSA Police, l’un des principaux syndicats représentant les professionnels de la sécurité en France.",
+    "paragraph2": "Basé à Paris, il allie expérience de terrain et expertise en communication stratégique. Il s’est engagé dans la défense des droits et intérêts des agents, avec un souci constant d’amélioration des conditions de travail.",
+    "paragraph3": "Dans ses fonctions actuelles, il supervise la communication interne et externe, les relations médias et la présence numérique du syndicat. Il contribue à porter la voix des policiers dans le débat public.",
+    "paragraph4": "Il se distingue également par sa capacité à associer plaidoyer exigeant et créativité, en mobilisant des formats modernes (storytelling digital, humour) pour fédérer et sensibiliser.",
+    "paragraph5": "Animé par des valeurs de justice, de professionnalisme et de solidarité, il plaide pour des réformes pragmatiques, la compétence technique et le respect du métier."
+  },
+  "media": {
+    "heroTag": "Archives médiatiques",
+    "title": "Interventions TV",
+    "subtitle": "> Communications publiques et débats télévisés",
+    "types": {
+      "interview": "Interview",
+      "debate": "Débat",
+      "report": "Reportage"
+    },
+    "durationTBD": "À déterminer",
+    "showOlder": "Voir les anciennes interventions",
+    "showLess": "Voir moins",
+    "comingNext": "Prochaines interventions",
+    "queue": {
+      "programming": "Programmation en cours...",
+      "sync": "Synchronisation avec les chaînes nationales...",
+      "update": "Mise à jour du planning médiatique...",
+      "standby": "En attente de mise à jour_"
+    },
+    "items": {
+      "orange": {
+        "title": "La carte noire de la France orange mécanique",
+        "desc": "« Il y a une désinhibition de la violence. Aujourd'hui, porter un uniforme, c'est être une cible »"
+      },
+      "dzmafia": {
+        "title": "La DZ Mafia, une menace majeure pour la France",
+        "desc": "« Notre filière judiciaire est en souffrance ! »"
+      },
+      "guetApens": {
+        "title": "Course-poursuite suivie d'un guet-apens",
+        "desc": "« Certains discours encouragent ces guets-apens contre la police »"
+      },
+      "mantes": {
+        "title": "CRS 8 déployée à Mantes-la-Jolie",
+        "desc": "« Nous faisons face à des jeunes bercés par des discours anti-police »"
+      },
+      "europe1": {
+        "title": "Fêtes, commémorations : des débordements assurés ?",
+        "desc": "« Prétendre que l'on pourra tout éviter, ce n'est pas réaliste »"
+      },
+      "pm": {
+        "title": "LFI : la Police Municipale n'a pas besoin d'être armée",
+        "desc": "« Des propos complètement inconscients »"
+      }
+    }
+  }
+}

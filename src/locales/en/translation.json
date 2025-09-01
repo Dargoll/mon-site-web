@@ -1,0 +1,158 @@
+{
+  "nav": {
+    "home": "Home",
+    "biography": "Biography",
+    "projects": "Projects",
+    "media": "Media",
+    "contact": "Contact"
+  },
+  "home": {
+    "system": "SYSTEM ACTIVATED",
+    "title": "Loïc WALDER",
+    "role": "NATIONAL DELEGATE — UNSA POLICE",
+    "idline": "ID: 001 | STATUS: ACTIVE | CLEARANCE: NATIONAL",
+    "mission": "> MISSION: Security and justice for all citizens",
+    "btnProfile": "ACCESS PROFILE",
+    "btnMedia": "ACCESS MEDIA",
+    "statAvailability": "Availability",
+    "statCommitment": "Commitment",
+    "statDetermination": "Determination",
+    "ctaJoin": "JOIN — UNSA Police"
+  },
+  "projects": {
+    "title": "PROJECTS & PASSIONS",
+    "subtitle": "> Discover my projects and passions!",
+    "cards": {
+      "designTitle": "Design & Graphics",
+      "designDesc": "Modernize, refine, bring ideas to life: UI, branding and polished compositions.",
+      "tiktokTitle": "TikTok Channel - Humour_PN",
+      "tiktokDesc": "Humor and behind the scenes.",
+      "chineseTitle": "Chinese Language",
+      "chineseDesc": "Learning through travel and encounters."
+    }
+  },
+  "design": {
+    "heroTag": "Creative Studio",
+    "title": "Design & Graphics",
+    "subtitle": "> Modernize, refine, tell stories through visuals and interfaces.",
+    "intro": "I turn ideas into visual experiences: clear UIs, memorable identities, balanced compositions. I design modern web interfaces, social visuals, posters, and cohesive design systems with special care for readability and detail.",
+    "ctaContact": "Contact me",
+    "ctaPortfolio": "View portfolio PDF",
+    "examplesTitle": "Recent examples",
+    "gallery": {
+      "uiDashboardTitle": "Minimal UI Dashboard",
+      "uiDashboardCaption": "Cool palette, rounded cards, readability first",
+      "landingTitle": "Product landing page",
+      "landingCaption": "Impactful hero, clear typographic hierarchy",
+      "posterTitle": "Event poster",
+      "posterCaption": "Strong composition, contrast and rhythm",
+      "brandTitle": "Logo & identity",
+      "brandCaption": "Simplicity, memorability, variations",
+      "socialTitle": "Social media mockups",
+      "socialCaption": "Adaptive formats, visual consistency",
+      "articleTitle": "Article page redesign",
+      "articleCaption": "Comfortable reading, reusable components"
+    },
+    "method": {
+      "listenTitle": "Listening & intent",
+      "listenDesc": "Understand use cases; define tone and level of modernity.",
+      "exploreTitle": "Exploration & mockups",
+      "exploreDesc": "Moodboards, type variants, grids, quick prototypes.",
+      "launchTitle": "Polish & delivery",
+      "launchDesc": "Reusable systems, optimized assets, clean handoff."
+    }
+  },
+  "seo": {
+    "siteName": "Walder Corporation",
+    "homepageTitle": "Home — Walder Corporation",
+    "homepageDescription": "Discover my projects, UNSA Police commitment and media appearances.",
+    "projectsTitle": "Projects — Walder Corporation",
+    "projectsDescription": "Explore my projects: design, tools, content and passions.",
+    "designTitle": "Design & Graphics — Walder Corporation",
+    "designDescription": "Modern UI, brand identities and refined layouts: my approach and recent examples.",
+    "biographyTitle": "Biography — Walder Corporation",
+    "biographyDescription": "Background and commitments: UNSA Police, missions and media.",
+    "mediaTitle": "Media — Walder Corporation",
+    "mediaDescription": "Selected TV/radio/media appearances: interviews, debates and analysis."
+  },
+  "common": {
+    "loading": "Loading…",
+    "openInNewTab": "(opens in a new tab)"
+  },
+  "loading": {
+    "title": "INITIALIZING SYSTEM",
+    "subtitle": "Loading UNSA Police Network..."
+  },
+  "bio": {
+    "heroTag": "User profile",
+    "heroTitle": "Biographical data",
+    "heroSubtitle": "> Professional background analysis in progress…",
+    "panelTitle": "Profile initialization",
+    "avatarAlt": "Loïc Walder Profile",
+    "statusLabel": "STATUS",
+    "statusLoading": "LOADING…",
+    "statusComplete": "COMPLETE",
+    "progressLabel": "PROGRESS",
+    "showButton": "DISPLAY BIOGRAPHICAL DATA",
+    "init": {
+      "initData": "> Initializing biographical data...",
+      "loadCareer": "> Loading career history...",
+      "parseRecords": "> Parsing UNSA Police records...",
+      "compileAchievements": "> Compiling achievements...",
+      "crossMedia": "> Cross-referencing media appearances...",
+      "complete": "> Data collection complete. Press to display profile.",
+      "ready": "> Data collection complete. Press to display profile."
+    },
+    "paragraph1": "Loïc Walder is a French police officer and an active trade unionist, serving as National Delegate for Communication at UNSA Police, one of the major unions representing law enforcement professionals in France.",
+    "paragraph2": "Based in Paris, he brings both field experience and strategic communication expertise to his role. He is committed to defending officers’ rights and improving working conditions.",
+    "paragraph3": "In his current position, he oversees internal and external communications, media relations and the union’s digital presence. He helps ensure police officers’ voices are clearly heard.",
+    "paragraph4": "He is known for combining serious advocacy with creative communication, using modern formats — digital storytelling and humor — to engage audiences.",
+    "paragraph5": "Driven by justice, professionalism and solidarity, he advocates pragmatic reforms, technical competence and respect for the profession."
+  },
+  "media": {
+    "heroTag": "Media archive",
+    "title": "TV Appearances",
+    "subtitle": "> Public communications and televised debates",
+    "types": {
+      "interview": "Interview",
+      "debate": "Debate",
+      "report": "Report"
+    },
+    "durationTBD": "TBD",
+    "showOlder": "View older appearances",
+    "showLess": "View less",
+    "comingNext": "Upcoming appearances",
+    "queue": {
+      "programming": "Programming in progress...",
+      "sync": "Sync with national channels...",
+      "update": "Updating media schedule...",
+      "standby": "Stand by for updates_"
+    },
+    "items": {
+      "orange": {
+        "title": "France’s 'Clockwork Orange' dark map",
+        "desc": "\"There is a loss of inhibition around violence. Today, wearing a uniform makes you a target.\""
+      },
+      "dzmafia": {
+        "title": "DZ Mafia, a major threat to France",
+        "desc": "\"Our judicial chain is under strain!\""
+      },
+      "guetApens": {
+        "title": "High-speed chase followed by an ambush",
+        "desc": "\"Some rhetoric encourages these ambushes against the police.\""
+      },
+      "mantes": {
+        "title": "CRS 8 deployed in Mantes-la-Jolie",
+        "desc": "\"We’re facing youths nurtured by anti-police narratives.\""
+      },
+      "europe1": {
+        "title": "Holidays & commemorations: unrest inevitable?",
+        "desc": "\"Claiming we can avoid everything is unrealistic.\""
+      },
+      "pm": {
+        "title": "LFI: Municipal Police don’t need to be armed",
+        "desc": "\"Such statements are completely irresponsible.\""
+      }
+    }
+  }
+}
