@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -49,6 +48,10 @@ All colors MUST be HSL. JetBrains Mono font family with technical aesthetic.
     --sidebar-accent-foreground: 220 15% 85%;
     --sidebar-border: 220 15% 20%;
     --sidebar-ring: 200 100% 50%;
+
+    /* Safe areas for iOS notch */
+    --safe-top: env(safe-area-inset-top);
+    --safe-bottom: env(safe-area-inset-bottom);
   }
 
   .dark {
@@ -96,74 +99,89 @@ All colors MUST be HSL. JetBrains Mono font family with technical aesthetic.
   }
 
   body {
-    @apply bg-background text-foreground font-jetbrains;
+    @apply bg-background text-foreground font-jetbrains antialiased;
+  }
+
+  /* Media elements always responsive */
+  img, svg, video, canvas {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Better focus visibility */
+  :focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
   }
 }
 
+/* =========================
+   COMPONENTS
+   ========================= */
 @layer components {
   /* Navigation styles */
   .nav-link {
     @apply uppercase font-medium tracking-wider transition-all duration-300 hover:text-primary hover:glow;
   }
-  
+
   /* Button variants */
   .btn-hero {
     @apply bg-gradient-to-r from-primary to-accent text-primary-foreground hover:from-primary/90 hover:to-accent/90 px-8 py-3 rounded-lg font-medium uppercase tracking-wider transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5 border border-primary/20;
   }
-  
+
   .btn-hero-secondary {
     @apply bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 rounded-lg font-medium uppercase tracking-wider transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5;
   }
-  
+
   .btn-floating {
     @apply fixed bottom-6 right-6 bg-gradient-to-r from-primary to-accent text-primary-foreground hover:from-primary/90 hover:to-accent/90 px-6 py-3 rounded-full font-medium uppercase tracking-wider transition-all duration-300 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-1 z-50 border border-primary/20;
   }
-  
+
   /* Card styles */
   .project-card {
     @apply bg-card text-card-foreground rounded-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2 border border-border/50 backdrop-blur-sm;
   }
-  
+
   /* Glow effects */
   .glow {
     text-shadow: 0 0 10px currentColor;
   }
-  
+
   .glow-border {
     box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
   }
-  
+
   /* Form styles */
   .form-container {
     @apply bg-card/80 backdrop-blur-sm text-card-foreground p-8 rounded-xl max-w-2xl mx-auto border border-border/50;
   }
-  
+
   .form-input {
     @apply w-full px-4 py-3 border border-border rounded-lg bg-input text-card-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 focus:glow-border;
   }
-  
+
   .form-textarea {
     @apply w-full px-4 py-3 border border-border rounded-lg bg-input text-card-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 resize-y min-h-[120px] focus:glow-border;
   }
-  
+
   .form-submit {
     @apply w-full bg-gradient-to-r from-primary to-accent text-primary-foreground hover:from-primary/90 hover:to-accent/90 px-6 py-3 rounded-lg font-medium uppercase tracking-wider transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 border border-primary/20;
   }
-  
+
   /* Technical grid overlay */
   .tech-grid {
-    background-image: 
+    background-image:
       linear-gradient(rgba(0, 191, 255, 0.1) 1px, transparent 1px),
       linear-gradient(90deg, rgba(0, 191, 255, 0.1) 1px, transparent 1px);
     background-size: 50px 50px;
   }
-  
+
   /* Scanning line animation */
   .scan-line {
     position: relative;
     overflow: hidden;
   }
-  
+
   .scan-line::after {
     content: '';
     position: absolute;
@@ -174,17 +192,17 @@ All colors MUST be HSL. JetBrains Mono font family with technical aesthetic.
     background: linear-gradient(90deg, transparent, #00bfff, transparent);
     animation: scan 3s infinite;
   }
-  
+
   @keyframes scan {
     0% { left: -100%; }
     100% { left: 100%; }
   }
-  
+
   /* Glitch effects for connection simulation */
   .glitch-container {
     position: relative;
   }
-  
+
   .glitch-container::before,
   .glitch-container::after {
     content: '';
@@ -197,7 +215,7 @@ All colors MUST be HSL. JetBrains Mono font family with technical aesthetic.
     opacity: 0;
     z-index: 1;
   }
-  
+
   .glitch-container::before {
     background: repeating-linear-gradient(
       0deg,
@@ -208,7 +226,7 @@ All colors MUST be HSL. JetBrains Mono font family with technical aesthetic.
     );
     animation: glitch-lines 8s infinite;
   }
-  
+
   .glitch-container::after {
     background: linear-gradient(
       90deg,
@@ -218,7 +236,7 @@ All colors MUST be HSL. JetBrains Mono font family with technical aesthetic.
     );
     animation: glitch-shift 12s infinite;
   }
-  
+
   @keyframes glitch-lines {
     0%, 85% { opacity: 0; }
     86%, 88% { opacity: 1; transform: translateY(0px); }
@@ -226,7 +244,7 @@ All colors MUST be HSL. JetBrains Mono font family with technical aesthetic.
     92%, 94% { opacity: 1; transform: translateY(1px); }
     95%, 100% { opacity: 0; transform: translateY(0px); }
   }
-  
+
   @keyframes glitch-shift {
     0%, 90% { opacity: 0; transform: translateX(0px); }
     91%, 92% { opacity: 0.8; transform: translateX(-3px); }
@@ -234,17 +252,68 @@ All colors MUST be HSL. JetBrains Mono font family with technical aesthetic.
     95%, 96% { opacity: 0.9; transform: translateX(-1px); }
     97%, 100% { opacity: 0; transform: translateX(0px); }
   }
-  
+
   /* Flicker effect */
   .connection-flicker {
     animation: flicker 15s infinite;
   }
-  
+
   @keyframes flicker {
     0%, 88% { opacity: 1; }
     89%, 89.5% { opacity: 0.4; }
     90%, 90.5% { opacity: 1; }
     91%, 91.5% { opacity: 0.6; }
     92%, 100% { opacity: 1; }
+  }
+}
+
+/* =========================
+   UTILITIES (responsive helpers)
+   ========================= */
+@layer utilities {
+  /* Page wrapper that compensates fixed nav + iOS safe areas */
+  .page {
+    @apply pt-24 md:pt-28 px-4 sm:px-6;
+    padding-top: calc(theme(spacing.24) + var(--safe-top, 0px));
+    padding-bottom: max(theme(spacing.4), var(--safe-bottom, 0px));
+  }
+
+  /* Horizontal scroll for wide boards/tables on mobile */
+  .overflow-x-grid {
+    @apply w-full overflow-x-auto;
+  }
+
+  /* Fluid typography for hero titles */
+  .h1-fluid {
+    font-size: clamp(1.875rem, 5vw, 3rem); /* 30px → 48px */
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+  .h2-fluid {
+    font-size: clamp(1.25rem, 3.5vw, 2rem); /* 20px → 32px */
+    line-height: 1.2;
+  }
+
+  /* dvh helpers (fix h-screen on mobile browsers) */
+  .min-h-dvh { min-height: 100dvh; }
+  .h-dvh { height: 100dvh; }
+
+  /* Responsive image pattern for project/media cards */
+  .img-cover {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: theme(borderRadius.2xl);
+  }
+}
+
+/* Reduced motion: respect accessibility preferences */
+@media (prefers-reduced-motion: reduce) {
+  .scan-line::after,
+  .glitch-container::before,
+  .glitch-container::after,
+  .connection-flicker {
+    animation: none !important;
   }
 }
