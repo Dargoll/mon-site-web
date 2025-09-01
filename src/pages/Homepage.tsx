@@ -19,36 +19,58 @@ const Homepage: React.FC = () => {
 
   return (
     <>
-      {/* SEO multilingue */}
       <Seo
         title={t("seo.homepageTitle")}
         description={t("seo.homepageDescription")}
         path="/"
       />
 
-      {/* Écran de chargement pleine hauteur (sous la nav fixe) */}
+      {/* Écran de chargement : full-bleed sous la nav */}
       {showIntro && (
-        <section className="relative -mt-24 md:-mt-28 min-h-[calc(100dvh-6rem)] md:min-h-[calc(100dvh-7rem)] flex items-center justify-center bg-background">
+        <section
+          className="
+            relative
+            -mt-24 md:-mt-28
+            -mx-4 sm:-mx-6
+            -mb-4
+            min-h-[calc(100dvh-6rem)] md:min-h-[calc(100dvh-7rem)]
+            flex items-center justify-center
+            bg-background
+          "
+          style={{
+            // annule le padding-bottom de .page (safe-area inclus)
+            marginBottom: "calc(-1 * var(--safe-bottom, 0px))",
+          }}
+        >
           <div className="relative z-10 text-center px-6 max-w-4xl w-full pt-24 md:pt-28">
             <LoadingBar onComplete={handleIntroComplete} duration={3000} />
           </div>
         </section>
       )}
 
-      {/* Hero pleine hauteur avec image de fond qui couvre */}
+      {/* Hero : full-bleed + fond qui couvre */}
       {!showIntro && (
         <section
-          className={`relative -mt-24 md:-mt-28 min-h-[calc(100dvh-6rem)] md:min-h-[calc(100dvh-7rem)] flex items-center justify-center overflow-hidden transition-opacity duration-500 ${
-            showMainContent ? "opacity-100" : "opacity-0"
-          }`}
+          className={`
+            relative
+            -mt-24 md:-mt-28
+            -mx-4 sm:-mx-6
+            -mb-4
+            min-h-[calc(100dvh-6rem)] md:min-h-[calc(100dvh-7rem)]
+            flex items-center justify-center
+            overflow-hidden
+            transition-opacity duration-500
+            ${showMainContent ? "opacity-100" : "opacity-0"}
+          `}
           style={{
             backgroundImage: `linear-gradient(rgba(34,40,49,0.9), rgba(34,40,49,0.7)), url(${heroBackground})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
+            // annule le padding-bottom de .page (safe-area inclus)
+            marginBottom: "calc(-1 * var(--safe-bottom, 0px))",
           }}
         >
-          {/* Contenu (on réapplique le padding top à l’intérieur pour ne pas passer sous la nav) */}
           <div className="relative z-10 w-full pt-24 md:pt-28 text-center px-6 max-w-5xl mx-auto">
             <div className="mb-8">
               <div className="inline-block border border-primary/30 rounded-lg px-4 py-2 mb-6 bg-primary/10 backdrop-blur-sm animate-fade-in">
@@ -74,7 +96,6 @@ const Homepage: React.FC = () => {
               <span className="animate-pulse text-primary">_</span>
             </p>
 
-            {/* Boutons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
               <Link to="/biography" className="btn-hero group">
                 <span className="mr-2">&gt;</span>
@@ -88,7 +109,6 @@ const Homepage: React.FC = () => {
               </Link>
             </div>
 
-            {/* Stats */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto">
               <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg p-4 hover:bg-card/70 hover:border-primary/50 transition-all duration-300 hover:scale-105">
                 <div className="text-primary text-2xl font-bold font-mono">24/7</div>
@@ -113,7 +133,6 @@ const Homepage: React.FC = () => {
             </div>
           </div>
 
-          {/* CTA flottant (ajuste pour safe-area iOS) */}
           <a
             href="https://www.unsapolice.com/adherez-renouvelez-en-ligne/"
             target="_blank"
