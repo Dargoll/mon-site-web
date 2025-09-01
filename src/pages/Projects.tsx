@@ -8,10 +8,10 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Requête API - RER B",
-      description: "Création d'une requête API pour connaître le passage de mon prochain RER !",
-      image: "https://i.imgur.com/fItZa1h.pngh",
-      link: "/projet-rer"
+      title: "Design & Graphisme",
+      description: "Moderniser, épurer, donner vie aux idées grâce au design. Interfaces, visuels créatifs et mises en page font partie de mes passions.",
+      image: "https://i.imgur.com/XYZDesign.png",
+      link: "/projet-design"
     },
     {
       id: 2,
