@@ -1,5 +1,4 @@
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import TypingAnimation from "@/components/TypingAnimation";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
@@ -148,8 +147,6 @@ const Biography: React.FC = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import heroBackground from "@/assets/hero-background-tech.jpg";
 import Seo from "@/components/Seo";
 import { useTranslation } from "react-i18next";
@@ -68,8 +67,6 @@ const Design: React.FC = () => {
           </p>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -142,8 +141,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      
-      <Footer />
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import { useMemo, useState } from "react";
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import heroBackground from "@/assets/hero-background-tech.jpg";
 import cnewsInterview from "@/assets/cnews-guet-apens.png";
 import crsDeployment from "@/assets/Cnews-Mantes-la-Jolie.png";
@@ -295,8 +294,6 @@ const MediaInterventions: React.FC = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

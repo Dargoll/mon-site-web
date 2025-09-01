@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import heroBackground from "@/assets/hero-background-tech.jpg";
 import DouYin from "@/assets/Douyin.jpg";
 import Seo from "@/components/Seo";
@@ -147,8 +146,6 @@ const Projects: React.FC = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };
