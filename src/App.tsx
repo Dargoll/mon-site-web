@@ -9,6 +9,7 @@ import Projects from "./pages/Projects";
 import MediaInterventions from "./pages/MediaInterventions";
 import NotFound from "./pages/NotFound";
 import PageRER from "./pages/PageRER";
+import Design from "./pages/Design";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/projects" element={<Projects />} />
           <Route path="/media" element={<MediaInterventions />} />
           <Route path="/projet-rer" element={<PageRER />} />
+          <Route path="/projet-design" element={<Design />} />
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
