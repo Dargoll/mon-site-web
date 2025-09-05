@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import heroBackground from "@/assets/hero-background-tech.jpg";
 import cnewsInterview from "@/assets/cnews-guet-apens.png";
@@ -48,6 +48,17 @@ const formatDate = (iso: string, lang: string) => {
 const MediaInterventions: React.FC = () => {
   const { t, i18n } = useTranslation();
   const [showAll, setShowAll] = useState(false);
+
+  const [navH, setNavH] = useState(0);
+useEffect(() => {
+  const update = () => {
+    const el = document.querySelector("nav");
+    setNavH(el ? el.getBoundingClientRect().height : 0);
+  };
+  update();
+  window.addEventListener("resize", update);
+  return () => window.removeEventListener("resize", update);
+}, []);
 
   // Données (les contenus textuels passent par i18n)
   const interventions: Intervention[] = useMemo(
@@ -208,37 +219,48 @@ const MediaInterventions: React.FC = () => {
 
       <Navigation />
 
-      {/* Hero Section */}
-      <div
-        className="pt-20 pb-16 relative tech-grid"
-        style={{
-          backgroundImage: `linear-gradient(rgba(34, 40, 49, 0.85), rgba(34, 40, 49, 0.7)), url(${heroBackground})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat"
-        }}
-      >
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="relative">
-            <div className="scan-line absolute -top-8 left-0 right-0 h-0.5"></div>
-            <div className="scan-line absolute -bottom-8 left-0 right-0 h-0.5" style={{ animationDelay: "2s" }}></div>
-          </div>
-        </div>
+{/* Hero */}
+<div
+  className={`
+    relative
+    -mx-4 sm:-mx-6
+    h-[40vh] md:h-[34vh] lg:h-[30vh]
+    flex items-center justify-center
+    tech-grid
+  `}
+  style={{
+    marginTop: -navH,
+    paddingTop: navH,
+    backgroundImage: `linear-gradient(rgba(34,40,49,0.85), rgba(34,40,49,0.7)), url(${heroBackground})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat"
+  }}
+>
+  <div className="absolute inset-0 flex items-center justify-center">
+    <div className="relative">
+      <div className="scan-line absolute -top-8 left-0 right-0 h-0.5"></div>
+      <div className="scan-line absolute -bottom-8 left-0 right-0 h-0.5" style={{ animationDelay: "2s" }}></div>
+    </div>
+  </div>
 
-        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
-          <div className="inline-block border border-primary/30 rounded-lg px-4 py-2 mb-6 bg-primary/10 backdrop-blur-sm">
-            <span className="text-primary text-sm font-mono uppercase tracking-wider">
-              {t("media.heroTag")}
-            </span>
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-primary glow mb-4">
-            {t("media.title")}
-          </h1>
-          <p className="text-xl text-foreground/70 font-mono">
-            {t("media.subtitle")}
-          </p>
-        </div>
-      </div>
+  <div
+    className="max-w-4xl mx-auto px-6 text-center relative z-10"
+    style={{ transform: `translateY(calc(-${navH / 2}px + 10px))` }}
+  >
+    <div className="inline-block border border-primary/30 rounded-lg px-4 py-2 mb-6 bg-primary/10 backdrop-blur-sm">
+      <span className="text-primary text-sm font-mono uppercase tracking-wider">
+        {t("media.heroTag")}
+      </span>
+    </div>
+    <h1 className="text-4xl md:text-5xl font-bold text-primary glow mb-4">
+      {t("media.title")}
+    </h1>
+    <p className="text-xl text-foreground/70 font-mono">
+      {t("media.subtitle")}
+    </p>
+  </div>
+</div>
 
       {/* Interventions Section */}
       <div className="flex-1 py-16 px-6">

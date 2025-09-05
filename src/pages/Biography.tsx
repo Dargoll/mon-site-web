@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import TypingAnimation from "@/components/TypingAnimation";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import heroBackground from "@/assets/hero-background-tech.jpg";
 import Seo from "@/components/Seo";
 import { useTranslation } from "react-i18next";
@@ -11,7 +11,19 @@ const Biography: React.FC = () => {
   const [showAnimation, setShowAnimation] = useState(true);
   const [showBiography, setShowBiography] = useState(false);
 
-  // ✅ On envoie des CLÉS i18n, pas des chaînes traduites
+  // Mesure dynamique de la navbar (pour compenser exactement sa hauteur)
+  const [navH, setNavH] = useState(0);
+  useEffect(() => {
+    const update = () => {
+      const el = document.querySelector("nav");
+      setNavH(el ? el.getBoundingClientRect().height : 0);
+    };
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
+
+  // ✅ Clés i18n
   const initializationMessages = [
     "bio.init.initData",
     "bio.init.loadCareer",
@@ -45,16 +57,25 @@ const Biography: React.FC = () => {
 
       <Navigation />
 
-      {/* Hero Section */}
+      {/* Hero / Bandeau titre (full-bleed, compensé par la hauteur réelle de la nav) */}
       <div
-        className="pt-20 pb-16 relative tech-grid"
+        className={`
+          relative
+          -mx-4 sm:-mx-6
+          h-[40vh] md:h-[34vh] lg:h-[30vh]
+          flex items-center justify-center
+          tech-grid
+        `}
         style={{
-          backgroundImage: `linear-gradient(rgba(34, 40, 49, 0.85), rgba(34, 40, 49, 0.7)), url(${heroBackground})`,
+          marginTop: -navH,           // l'image passe sous la nav → plus de "trait"
+          paddingTop: navH,           // le contenu n'est jamais caché
+          backgroundImage: `linear-gradient(rgba(34,40,49,0.85), rgba(34,40,49,0.7)), url(${heroBackground})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
       >
+        {/* scan-lines */}
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="relative">
             <div className="scan-line absolute -top-8 left-0 right-0 h-0.5"></div>
@@ -65,7 +86,11 @@ const Biography: React.FC = () => {
           </div>
         </div>
 
-        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+        {/* contenu — centré + correction visuelle de navH/2 */}
+        <div
+          className="max-w-4xl mx-auto px-6 text-center relative z-10"
+          style={{ transform: `translateY(calc(-${navH / 2}px + 10px))` }}
+        >
           <div className="inline-block border border-primary/30 rounded-lg px-4 py-2 mb-6 bg-primary/10 backdrop-blur-sm">
             <span className="text-primary text-sm font-mono uppercase tracking-wider">
               {t("bio.heroTag")}
@@ -105,7 +130,7 @@ const Biography: React.FC = () => {
 
               {showAnimation && (
                 <TypingAnimation
-                  messages={initializationMessages} // ✅ clés i18n
+                  messages={initializationMessages}
                   onComplete={handleAnimationComplete}
                   speed={30}
                 />
